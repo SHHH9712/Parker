@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Map</title>
+  <style>
+    body{
+      /* background-image: url("ucimap.png"); */
+      background-color: #FFFFFF;
+    }
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    header, footer {
+      color: white;
+      font-size: 36px;
+      padding: 1em;
+      background-color: #6fbf72;
+      text-align: center;
+    }
+    .parent {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .image1 {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .image2 {
+      position: absolute;
+      top: 431px;
+      left: 830px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>MAP</header>
+
+  <!-- <h1>This is the map page for ParkerApp</h1>
+  <p>This is a paragraph.</p> -->
+  <div>
+    <img class="image1" src="{{url_for('static', filename='ucimap.png')}}">
+    <a href="/pklot1"><img class="image2" src="{{url_for('static', filename='lot1.png')}}"></a>
+  </div>
+
+  <footer>
+    <a href="/" class = "button">  MAP  </a>
+    <a href="/pkprofile" class = "button">PROFILE</a>
+  </footer>
+
+</body>
+</html>
